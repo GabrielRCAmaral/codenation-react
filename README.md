@@ -1,2 +1,3 @@
-# codenation react
-Fazendo os desafios do programa de aceleração dev da CodeNation de Front-End React.
+# CODENATION ACELERAÇÃO REACT
+
+Olá ! Nesse repositorio irei postar todos os desafios que realizar no programa de aceleração da CodeNation do assunto React.
