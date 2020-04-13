@@ -1,2 +1,0 @@
-# codenation-react
-Codenation challanges 

@@ -1,0 +1,383 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+
+.navbar-menu {
+    z-index: 2;
+	display: flex;
+}
+
+.navbar-menu .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar-menu ul {
+    display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-menu a {
+    margin: 0 25px;
+}
+
+.navbar-menu  a:hover {
+	color: #e4bb23;
+}
+
+.navbar-menu a,
+.filmes-menu li a {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.header {
+    background-image: url("../img/capa-madmax2.jpg");
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 50vh;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.header:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+.header-conteudo {
+    width: 100%;
+}
+
+.header-conteudo .container {
+	position: relative;
+	z-index: 2;
+}
+.header-conteudo h2{
+    color: #fff;
+	font-size: 6.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+
+}
+
+.header-conteudo-item {
+    color: #fff;
+	text-decoration: none;
+	margin-right: 15px;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+.header-conteudo a:hover {
+    color: #e4bb23;
+}
+
+.header-conteudo p {
+    display: flex;
+	margin: 15px 0 30px;
+	font-size: 13px;
+}
+
+.header-info {
+	padding: 20px 0;
+	font-size: 1.4em;
+	color: #fff;
+}
+
+.header-info p:last-child {
+	color: #bc9a1d;
+}
+
+.header-botao {
+    display: inline-block;
+	padding: 15px 50px;
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-botao:hover {
+	background-color: #bc9a1d;
+}
+
+.header-botao i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+.logo {
+    background-image: url("../assets/logo-imdb.jpg"); 
+    display:inline-block;
+    width: 110px;
+    height: 45px;
+}
+
+.navbar-usuario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navbar-usuario-foto {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+	width: 45px;
+}
+
+.navbar-usuario-foto img {
+    width: 100%;
+    height: auto;
+}
+    
+.navbar-usuario-nome {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.filmes-menu ul {
+    align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.filmes-menu li {
+    margin: 0 20px;
+}
+
+.filmes-menu  li a {
+    color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+.filmes-menu {
+	width: 100%;
+}
+
+.filmes {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+.filmes-lista {
+    align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.filmes-lista li {
+    background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 24%;
+}
+
+.filmes-lista li:hover .filmes-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+.filmes-poster {
+   
+    margin: 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.filmes-poster img {
+	width: 100%;
+	height: auto;
+}
+
+.filmes-poster-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	padding: 80px 20px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+.filmes-poster-info h3 {
+	color: #e4bb23;
+	font-size: 2em;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.filmes-poster-info a{
+	color: #fff;
+	font-size: 5em;
+	transition: all 0.2s ease-in-out;
+}
+
+.filmes-poster-info a:hover {
+	color: #e4bb23;
+}
+
+.filmes-sinopse {
+	padding: 10px;
+	width: 100%;
+}
+
+.filmes-sinopse h3 {
+    font-size: 1.3em;
+	font-weight: bold;
+	margin: 0;
+    text-transform: uppercase;
+}
+.sinopse-genero {
+	margin: 10px 0;
+	display: flex;
+}
+
+.sinopse-genero a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #e4bb23;
+}
+
+.sinopse-genero a:hover {
+	text-decoration: underline;
+}
+
+
+.filmes-nota {
+	margin: 0;
+	align-items: center;
+	display: flex;
+	font-size: 2em;
+	font-weight: bold;
+	justify-content: space-between;
+}
+
+.filmes-nota i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.filmes-nota i:hover {
+	color: #e74c3c;
+}
+
+.rodape {
+	background-color: #fff;
+	color: #bababa;
+	padding: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.rodape .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodape ul {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.rodape-item {
+	margin: 0 20px;
+}
+.rodape-item:last-child {
+	margin-right: 0;
+}
+
+.rodape-item  a {
+	font-size: 2.5em;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.tw a:hover {
+	color: #55acee;
+}
+
+.fc a:hover {
+	color: #3b5998;
+}
+
+.inst a:hover {
+	color: #e95950;
+}
+
