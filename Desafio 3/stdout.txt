@@ -1,0 +1,4 @@
+
+> react-14@1.0.0 test C:\Users\gabri\codenation\nodejs-12
+> jest test/index.test.js
+
